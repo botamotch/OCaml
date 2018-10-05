@@ -1,0 +1,10 @@
+################################################
+# Build an OCaml library
+
+BYTE_ENABLED = true
+NATIVE_ENABLED = false
+
+# .DEFAULT: $(OCamlLibrary mymodule, amodule)
+FILES[] = amodule
+LIB = mymodule
+.DEFAULT: $(OCamlLibrary $(LIB), $(FILES))
