@@ -1,8 +1,36 @@
 # OCaml練習用リポジトリ
 
-## 作成中 or 作成予定
+## How to `opam switch`
 
-- 2018-06-17 OMakeサンプル part.1
+```sh
+$ opam switch list-available compiler
+$ opam switch create 4.07.0 ocaml-system.4.07.0
+$ eval `opam env`
+$ opam install ...
+```
+
+## Usefull packege
+
+- merlin
+- ocp-indent
+- utop
+- core
+- omake
+
+## Import package
+
+### Build
+```sh
+$ ocamlopt -o prog core.cmxa prog.ml
+```
+
+### utop REPL
+```
+$ utop
+# # require "core" ;;
+# open Core ;;
+# let (ints,strings) = List.unzip [(1,"one"); (2,"two"); (3,"three")];;
+```
 
 ## 参考
 
