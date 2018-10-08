@@ -3,7 +3,7 @@
 ## How to `opam switch`
 
 ```sh
-$ opam switch list-available compiler
+$ opam switch list-available ocaml-system
 $ opam switch create 4.07.0 ocaml-system.4.07.0
 $ eval `opam env`
 $ opam install ...
