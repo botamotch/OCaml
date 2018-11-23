@@ -22,6 +22,7 @@ $ opam install ...
 ### Build
 ```sh
 $ ocamlopt -o prog core.cmxa prog.ml
+$ ocamlfind ocamlopt -o main -linkpkg -thread -package core main.ml
 ```
 
 ### utop REPL
