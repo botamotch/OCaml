@@ -30,7 +30,7 @@
 # If so, define the subdirectory targets and uncomment this section.
 #
 
-# .SUBDIRS:
+.SUBDIRS: lib
 
 
 ########################################################################
@@ -59,7 +59,7 @@ if $(not $(OCAMLFIND_EXISTS))
 
 # Include path
 #
-# OCAMLINCLUDES +=
+OCAMLINCLUDES += lib
 
 #
 # Compile native or byte code? 
@@ -107,7 +107,7 @@ FILES[] =
    main
 
 PROGRAM = main
-# OCAML_LIBS +=
+OCAML_LIBS += lib/fft
 # OCAML_CLIBS +=
 # OCAML_OTHER_LIBS +=
 # OCAML_LIB_FLAGS +=

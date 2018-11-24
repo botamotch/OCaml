@@ -1,7 +1,10 @@
+*.opt
 *.cmx
 *.cmi
 *.cmo
+*.cmxa
 *.o
+*.a
 *.omc
-*/.omakedb
-*/.omakedb.lock
+.omakedb
+.omakedb.lock

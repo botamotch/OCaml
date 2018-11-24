@@ -1,0 +1,3 @@
+FILES[] = fft
+LIB = fft
+.DEFAULT: $(OCamlLibrary $(LIB), $(FILES))
