@@ -15,7 +15,7 @@ let wx_out = Output.create `Qt
 let list_sig =
   let curve x = 0.3 *. (sin (x *. 3.7)) +. 0.3 *. (sin (x *. 2.3)) +. 0.4 *. (sin (x *. 20.9)) +. (Random.float 0.5) -. (Random.float 0.5) in
   let x = (range 0. 100. 0.1) in
-  List.map curve 
+  List.map curve x
 
 let list_spec =
   let complex_list = List.map (fun x -> Fft.complex_of_float x) list_sig in
