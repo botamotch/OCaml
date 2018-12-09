@@ -1,8 +1,10 @@
 OASIS Example
 ================================================================================
 
-### 1. Setup `_oasis` file
+Getting started
 --------------------------------------------------------------------------------
+
+### 1. Setup `_oasis` file
 
     Executable "foo"
       Path: src
@@ -15,24 +17,21 @@ OASIS Example
       Modules: Bar
 
 ### 2. Setup `.merlin` file
---------------------------------------------------------------------------------
 
     S src
     B _build
     B _build/src
 
 ### 3. Write code ...
---------------------------------------------------------------------------------
 
-### 4. Setup OASIS & Build
---------------------------------------------------------------------------------
+### 4. Setup OASIS, Build and Run
 
-    :::bash
+    ::bash
     $ oasis setup -setup-update dynamic
     $ make
     $ ./foo.native
 
-### Reference
+Reference
 --------------------------------------------------------------------------------
 
 - [Setting up with OASIS - OCaml](https://ocaml.org/learn/tutorials/setting_up_with_oasis.html)
