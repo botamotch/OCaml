@@ -1,0 +1,22 @@
+Name: App03
+Version: 0.1
+Synopsis: A Example program about Foureier Transform Example
+Authors: botamotch <laughing00boomer@gmail.com>
+License: LGPL with OCaml linking exception
+
+Description: A Example program about Foureier Transform Example
+Homepage: https://github.com/botamotch/OCaml
+
+OASISFormat: 0.4
+BuildTools: ocamlbuild
+Plugins: META (0.4), DevFiles (0.4)
+
+Executable "foo"
+  Path: src
+  MainIs: foo.ml
+  CompiledObject: best
+  BuildDepends: bar
+
+Library "bar"
+  Path: src
+  Modules: Bar
