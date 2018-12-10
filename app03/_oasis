@@ -11,12 +11,12 @@ OASISFormat: 0.4
 BuildTools: ocamlbuild
 Plugins: META (0.4), DevFiles (0.4)
 
-Executable "foo"
+Executable "main"
   Path: src
-  MainIs: foo.ml
+  MainIs: main.ml
   CompiledObject: best
-  BuildDepends: bar
+  BuildDepends: fft
 
-Library "bar"
+Library "fft"
   Path: src
-  Modules: Bar
+  Modules: Fft
