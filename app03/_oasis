@@ -15,7 +15,7 @@ Executable "main"
   Path: src
   MainIs: main.ml
   CompiledObject: best
-  BuildDepends: fft
+  BuildDepends: fft, gnuplot
 
 Library "fft"
   Path: src
