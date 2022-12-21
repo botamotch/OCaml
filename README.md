@@ -61,3 +61,8 @@ $ utop
 ### OASIS
 - [oasis.forge.ocamlcore.org](http://oasis.forge.ocamlcore.org/index.html)
 
+---
+
+OcamlでAPIサーバー作るやつらしい。面白そう
+- https://github.com/rgrinberg/opium
+- https://doitu.info/blog/6771ff3676cbc747baeb76fbbb2ae212423c8a6e
