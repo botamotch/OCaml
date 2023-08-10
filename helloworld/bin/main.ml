@@ -1,12 +1,15 @@
-(*
- * let rec range a b =
- *     if a > b then []
- *     else a :: range (a + 1) b ;;
- *)
+open Helloworld
 
-let a = 4 in
-let b = 5 in
-Printf.printf "a : %d , b : %d\n" a b
+let () =
+    let a = 4 in
+    let b = 5 in
+    Printf.printf "a : %d , b : %d\n" a b;
 
-let () = print_endline "Hello, World!"
+    print_endline "Hello, World!";
+
+    let result = Fact.fact 5 in
+    Printf.printf "fact : %d\n" result;
+
+    let result = Math.add 2 3 in
+    Printf.printf "add : %d\n" result;
 
