@@ -1,4 +1,4 @@
 (executable
  (public_name helloworld)
  (name main)
- (libraries helloworld))
+ (libraries helloworld lwt.unix tiny_httpd))
